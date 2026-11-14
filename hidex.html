@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nosso Álbum</title>
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="sala.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="room" aria-hidden="true">
+  <div id="wall">
+    <svg id="win" viewBox="0 0 60 80">
+      <defs>
+        <linearGradient id="wsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1138"/><stop offset=".6" stop-color="#4a3a7a"/><stop offset="1" stop-color="#d0708a"/></linearGradient>
+        <radialGradient id="wmoon" cx=".4" cy=".4"><stop offset="0" stop-color="#fffbe8"/><stop offset="1" stop-color="#d8d4c0"/></radialGradient>
+      </defs>
+      <rect x="6" y="3" width="48" height="70" rx="2" fill="#4a2a16"/>
+      <rect x="9" y="6" width="42" height="64" fill="url(#wsky)"/>
+      <circle cx="38" cy="22" r="6" fill="url(#wmoon)"/>
+      <g fill="#fff"><circle cx="16" cy="14" r=".6"/><circle cx="24" cy="26" r=".5"/><circle cx="46" cy="40" r=".6"/><circle cx="14" cy="36" r=".5"/><circle cx="30" cy="12" r=".5"/></g>
+      <path d="M9 70V58l4-3v-5l3 2 3-8 3 8 3-2v6l4-2v-8l2-4 2 4v8l5 3v-3l3-2 3 2v14z" fill="#1a1238" opacity=".85"/>
+      <path d="M30 6V70M9 38H51" stroke="#4a2a16" stroke-width="2.2"/>
+      <rect x="3" y="72" width="54" height="4" rx="1" fill="#6a4226"/>
+      <path d="M0 0H14C10 20 10 46 14 70H0Z" fill="#7a1236"/>
+      <path d="M60 0H46C50 20 50 46 46 70H60Z" fill="#7a1236"/>
+      <path d="M5 0c-1 22-1 44 1 70M9 0c-1 22-1 44 1 70M55 0c1 22 1 44-1 70M51 0c1 22 1 44-1 70" stroke="#ffffff22" stroke-width=".5" fill="none"/>
+      <rect x="0" y="0" width="60" height="3" fill="#d9b46a"/>
+    </svg>
+    <div id="frame"></div>
+  </div>
+  <div id="beam"></div>
+
+  <svg class="obj candle" viewBox="0 0 30 56">
+    <defs><radialGradient id="cglow"><stop offset="0" stop-color="#ffd98a" stop-opacity=".8"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient></defs>
+    <circle class="glow" cx="15" cy="12" r="14" fill="url(#cglow)"/>
+    <ellipse cx="15" cy="52" rx="12" ry="3" fill="#00000055"/>
+    <ellipse cx="15" cy="49" rx="11" ry="3" fill="#c9a24f"/>
+    <rect x="9" y="22" width="12" height="27" rx="1" fill="#f6ecd6"/>
+    <path d="M9 22h12" stroke="#d9c9a4" stroke-width="1"/>
+    <path d="M15 22v-4" stroke="#3a2a2a" stroke-width="1"/>
+    <path class="flame" d="M15 5c-4 5-3 9 0 11 3-2 4-6 0-11z" fill="#ffb84a"/>
+  </svg>
+
+  <svg class="obj vase" viewBox="0 0 40 64">
+    <ellipse cx="20" cy="61" rx="12" ry="3" fill="#00000055"/>
+    <g stroke="#3f7a4a" stroke-width="1.2" fill="none"><path d="M20 40C20 28 14 20 10 14"/><path d="M20 40V10"/><path d="M20 40C20 28 26 20 30 14"/></g>
+    <g fill="#e98aaa"><circle cx="10" cy="13" r="5"/><circle cx="20" cy="8" r="5.5" fill="#f7c6d8"/><circle cx="30" cy="13" r="5" fill="#d9588a"/></g>
+    <g fill="#ffd98a"><circle cx="10" cy="13" r="1.6"/><circle cx="20" cy="8" r="1.8"/><circle cx="30" cy="13" r="1.6"/></g>
+    <path d="M12 38h16l3 20c0 2-3 3-11 3s-11-1-11-3z" fill="#9aa8d8" opacity=".85"/>
+    <path d="M14 42l1.6 14" stroke="#fff" stroke-opacity=".6" stroke-width="1.2" stroke-linecap="round"/>
+  </svg>
+
+  <svg class="obj cup2" viewBox="0 0 50 40">
+    <ellipse cx="24" cy="36" rx="20" ry="3.5" fill="#00000055"/>
+    <ellipse cx="24" cy="31" rx="18" ry="4" fill="#f6ecd6"/>
+    <path d="M12 14h24v10c0 6-5 9-12 9s-12-3-12-9z" fill="#fff"/>
+    <path d="M36 17h3c3 0 3 7 0 7h-3" fill="none" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="24" cy="14" rx="12" ry="2.6" fill="#6a3a22"/>
+    <g class="steam2" fill="none" stroke="#fff" stroke-width="1.2" stroke-opacity=".7"><path d="M19 10c-3-3 3-5 0-8M27 10c-3-3 3-5 0-8"/></g>
+  </svg>
+
+  <svg class="obj letters" viewBox="0 0 60 36">
+    <rect x="4" y="10" width="40" height="24" rx="1" fill="#00000040" transform="translate(2 2)"/>
+    <rect x="4" y="10" width="40" height="24" rx="1" fill="#f6ecd6" stroke="#d9b46a" stroke-width=".8" transform="rotate(-6 24 22)"/>
+    <path d="M4 10l20 13 20-13" fill="none" stroke="#d9b46a" stroke-width=".8" transform="rotate(-6 24 22)"/>
+    <circle cx="26" cy="22" r="3.4" fill="#b01f52"/>
+    <path d="M38 20L56 2" stroke="#e8d3bc" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M38 20l-3 5 5-3z" fill="#1a1a2a"/>
+  </svg>
+</div>
+
+<div id="tilt"><div id="stage"><div id="book"></div><div id="amb"></div></div></div>
+<div id="fx"></div>
+<nav id="nav">
+  <button id="mus" aria-label="Música"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 18V6l10-2v12" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="7" cy="18" r="2.4" fill="currentColor"/><circle cx="17" cy="16" r="2.4" fill="currentColor"/></svg></button>
+  <button id="prev" aria-label="Voltar página">‹</button>
+  <span id="count"></span>
+  <button id="next" aria-label="Virar página">›</button>
+</nav>
+
+<!-- FOTOS: pasta "img" ao lado deste index.html -->
+<div id="fotos" hidden>
+  <img src="img/foto.01.jpeg" alt="Foto 1">
+  <img src="img/foto.02.jpeg" alt="Foto 2">
+  <img src="img/foto.03.jpeg" alt="Foto 3">
+  <img src="img/foto.04.jpeg" alt="Foto 4">
+</div>
+<script src="js.js"></script>
+</body>
+</html>
